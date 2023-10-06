@@ -43,3 +43,13 @@ Common DB tasks are scripts in the `package.json`:
 > docker compose stop # to pause the container
 > docker compose down # will tear down the container, wiping data
 > ```
+
+
+## Contributing
+This is a project built for Hacktoberfest 2023. Any is free to contribute or make suggestions on how we can make this template the best for solidstart.
+
+Feel free to open PRs/Issues and I'll have a look at them when I can.
+
+The two main priorities I want to maintain in this template are:
+- Solid's signals offer an incredibly powerful API and they're perfect for integrating with the realtime nature of Live Queries. Any opportunity we have to lean into that, and really showcase the pairing the better.
+- Simplicity. I don't want to introduce any other libraries. I made this repo to be similar to how `pnpm create solid` gives you templates like "with-tailwind" that has just solid and tailwind. Though I'm think it would be helpful to add some instructions for how to integrate those.
