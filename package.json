@@ -1,6 +1,8 @@
 {
   "name": "surreal-solid",
   "scripts": {
+    "sql": "docker compose exec db /surreal sql --db dev --ns dev",
+    "surreal-import": "surreal import --conn http://localhost:8000 --ns dev --db dev db/seed.surql",
     "dev": "solid-start dev",
     "build": "solid-start build",
     "start": "solid-start start"
@@ -18,7 +20,8 @@
     "@solidjs/meta": "^0.28.6",
     "@solidjs/router": "^0.8.3",
     "solid-js": "^1.7.12",
-    "solid-start": "^0.3.6"
+    "solid-start": "^0.3.6",
+    "surrealdb.js": "^0.9.1"
   },
   "engines": {
     "node": ">=18"

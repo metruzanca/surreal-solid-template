@@ -14,14 +14,7 @@ netlify
 /node_modules
 
 # IDEs and editors
-/.idea
-.project
-.classpath
-*.launch
-.settings/
-
-# Temp
-gitignore
+.vscode/settings.json
 
 # System Files
 .DS_Store
