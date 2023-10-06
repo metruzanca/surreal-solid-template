@@ -16,6 +16,20 @@ export default function Home() {
         <span style={{ color: '#fc00a0' }}>Surreal</span>
       </h1>
 
+      <p>
+        Visit the documentation to learn how to get started:
+        <a
+          href="https://start.solidjs.com"
+          target="_blank"
+          textContent={'start.solidjs.com'}
+        />,&nbsp;
+        <a
+          href="https://surrealDB.com"
+          target="_blank"
+          textContent={'SurrealDB'}
+        />
+      </p>
+
       <div>
         <TodoForm
           // disabled={ready()}
@@ -34,22 +48,6 @@ export default function Home() {
             />
           )}
         </For>
-      </div>
-
-      <div>
-        <p>
-          Visit the documentation to learn how to get started: 
-          <a
-            href="https://start.solidjs.com"
-            target="_blank"
-            textContent={'start.solidjs.com'}
-          />,&nbsp;
-          <a
-            href="https://surrealDB.com"
-            target="_blank"
-            textContent={'SurrealDB'}
-          />
-        </p>
       </div>
     </main>
   );

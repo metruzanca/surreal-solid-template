@@ -1,0 +1,9 @@
+[
+  {
+    "action": "remove",
+    "files": [
+      ".github/example.gif",
+      "LICENSE"
+    ]
+  }
+]

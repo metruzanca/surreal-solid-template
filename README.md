@@ -6,18 +6,13 @@ This template leans into Surreal's Live queries, with a public read-write db, wh
 
 Solid is a perfect match for Surreal, since we can easily wrap up surreal inside of a series of signals to be able to consume surreal as if it were a native feature of Solid.
 
+![](.github/example.gif)
+
 ## Creating a project
 
 ```bash
 # pnpx or npx
 pnpx degit metruzanca/surreal-solid-template ss-app
-```
-
-### Alternatively, use Github
-This is a template repo, you can click "Use this repo" where the "<> Code" button normally sits. Alternatively you can use the github-cli
-
-```
-gh repo create my-new-project --public --template metruzanca/surreal-solid-template
 ```
 
 ## Developing
