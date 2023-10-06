@@ -1,4 +1,4 @@
-import { createEffect, createSignal, from, onCleanup, onMount } from "solid-js";
+import { createEffect, createSignal, onCleanup, onMount } from "solid-js";
 import { Surreal } from 'surrealdb.js';
 export const db = new Surreal();
 
@@ -53,20 +53,17 @@ export function useLiveQuery<T extends Record<string, unknown>>(
 
   const create = async (item: PartialKey<T, 'id'>) => {
     // https://surrealdb.com/docs/integration/sdks/javascript#create
-    const result = await db.create(thing, item);
-    console.log(result);
+    await db.create(thing, item);
   }
 
   const merge = async (thing: string, item: Partial<T>) => {
     // https://surrealdb.com/docs/integration/sdks/javascript#merge
-    const result = await db.merge(thing, item);
-    console.log(result);
+    await db.merge(thing, item);
   }
 
   const remove = async (thing: string) => {
     // https://surrealdb.com/docs/integration/sdks/javascript#delete
-    const result = await db.delete(thing);
-    console.log(result);
+    await db.delete(thing);
   }
 
   return [things, { merge, create, remove }] as const;
