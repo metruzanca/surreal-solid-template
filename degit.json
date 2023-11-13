@@ -3,6 +3,9 @@
     "action": "remove",
     "files": [
       ".github/example.gif",
+      ".github/railway.md",
+      ".github/vercel.md",
+      ".github/README.md",
       "LICENSE"
     ]
   }
