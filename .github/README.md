@@ -2,7 +2,7 @@
 
 ```bash
 # pnpx or npx
-pnpx degit metruzanca/surreal-solid-template ss-app
+pnpx degit metruzanca/surreal-solid-template my-app
 ```
 
 Everything you need to build your next project, powered by [`solid-start`](https://start.solidjs.com) & [`surreal-db`](https://surrealdb.com).
@@ -12,6 +12,15 @@ This template leans into Surreal's Live queries, with a public read-write db, wh
 Solid is a perfect match for Surreal, since we can easily wrap up surreal inside of a series of signals to be able to consume surreal as if it were a native feature of Solid.
 
 ![](./example.gif)
+
+## Getting started
+
+This template uses degit, but you can also just clone the repository. Using degit, will automatically remove the files used for presentation.
+
+```bash
+# pnpx or npx
+pnpx degit metruzanca/surreal-solid-template my-app
+```
 
 ## Developing
 
