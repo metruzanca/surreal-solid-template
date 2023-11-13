@@ -6,7 +6,7 @@ This template leans into Surreal's Live queries, with a public read-write db, wh
 
 Solid is a perfect match for Surreal, since we can easily wrap up surreal inside of a series of signals to be able to consume surreal as if it were a native feature of Solid.
 
-![](.github/example.gif)
+![](./example.gif)
 
 ## Creating a project
 
