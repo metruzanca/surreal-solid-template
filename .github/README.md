@@ -1,5 +1,10 @@
 # SolidStart-SurrealDB
 
+```bash
+# pnpx or npx
+pnpx degit metruzanca/surreal-solid-template ss-app
+```
+
 Everything you need to build your next project, powered by [`solid-start`](https://start.solidjs.com) & [`surreal-db`](https://surrealdb.com).
 
 This template leans into Surreal's Live queries, with a public read-write db, which is similar to firebase's realtimedb/firestore set to test mode.
@@ -7,13 +12,6 @@ This template leans into Surreal's Live queries, with a public read-write db, wh
 Solid is a perfect match for Surreal, since we can easily wrap up surreal inside of a series of signals to be able to consume surreal as if it were a native feature of Solid.
 
 ![](./example.gif)
-
-## Creating a project
-
-```bash
-# pnpx or npx
-pnpx degit metruzanca/surreal-solid-template ss-app
-```
 
 ## Developing
 
