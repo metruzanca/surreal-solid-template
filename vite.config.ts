@@ -1,15 +1,14 @@
-import solid from "solid-start/vite";
-import { defineConfig } from "vite";
+
+import { defineConfig } from "@solidjs/start/config";
 
 export default defineConfig({
-  plugins: [solid()],
-  server: {
-    // https://vitejs.dev/config/server-options.html#server-proxy
-    proxy: {
-      "/rpc": {
-        target: "ws://localhost:8000",
-        ws: true
+    server: {
+      // https://vitejs.dev/config/server-options.html#server-proxy
+      proxy: {
+        "/rpc": {
+          target: "ws://localhost:8000",
+          ws: true
+        }
       }
     }
-  }
 });

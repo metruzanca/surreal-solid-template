@@ -1,7 +1,7 @@
+import { Title } from "@solidjs/meta";
 import { For } from "solid-js";
-import { Title } from "solid-start";
-import { TodoForm, TodoItem } from "~/lib/components";
-import { Todo } from "~/lib/types";
+import { TodoForm } from "~/components/TodoForm";
+import { Todo, TodoItem } from "~/components/TodoItem";
 import { useLiveQuery } from "~/lib/surreal";
 
 export default function Home() {

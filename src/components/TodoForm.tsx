@@ -1,28 +1,5 @@
 import { Component } from "solid-js";
-import { Todo } from "./types";
-
-export const TodoItem: Component<{
-  item: Todo;
-  onToggle: (id: string) => void;
-  onRemove: (id: string) => void;
-}> = (props) => (
-  <div>
-    <input
-      type="checkbox"
-      checked={props.item.completed}
-      onChange={() => props.onToggle(props.item.id)}
-    />
-    <span>{props.item.name}</span>
-    {props.item.completed && (
-      <span
-        style={{ color: 'red', cursor: 'pointer', 'margin-left': '.5em' }}
-        onClick={() => props.onRemove(props.item.id)}
-      >
-        X
-      </span>
-    )}
-  </div>
-)
+import { Todo } from "./TodoItem";
 
 export const TodoForm: Component<{
   onSubmit: (todo: Pick<Todo, 'name'>) => void;

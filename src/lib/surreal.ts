@@ -2,13 +2,14 @@ import { createEffect, createSignal, onCleanup, onMount } from "solid-js";
 import { Surreal } from 'surrealdb.js';
 export const db = new Surreal();
 
+const RAILWAY = 'https://YOUR_PUBLIC_URL/rpc'
+const DOCKER_LOCAL = 'http://localhost:8000/rpc'
+
 // https://surrealdb.com/docs/integration/sdks/javascript#connect
-export const connect = async () => db.connect(
-  'http://localhost:8000/rpc', {
-    ns: 'dev',
-    db: 'dev',
-  }
-);
+export const connect = async () => db.connect(DOCKER_LOCAL, {
+  namespace: 'dev',
+  database: 'dev',
+});
 
 type PartialKey<T, K extends keyof T> = Omit<T, K> & Partial<Pick<T, K>>
 

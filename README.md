@@ -19,7 +19,7 @@ Get surreal running locally by either:
 
 ## Common Tasks
 
-- `pnpm sql`: gives you access to the surrealdb shell for running surql queries
-- `pnpm surreal-import`: seeds the database with the contents of `db/seed.surql`
-- `docker compose stop`: Stops DB without clearing data
-- `docker compose down`: Tears down container, wiping data
+- Access the surrealdb shell: `docker compose exec db /surreal sql --db dev --ns dev`
+- Seed the database with a surql file: `surreal import --conn http://localhost:8000 --ns dev --db dev db/seed.surql`
+- Stop DB without clearing data: `docker compose stop`
+- Tear down container, wiping data: `docker compose down`
